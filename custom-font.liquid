@@ -15,6 +15,7 @@
       {% assign apply_h6 = block.settings.apply_h6 %}
       {% assign apply_span = block.settings.apply_span %}
       {% assign apply_p = block.settings.apply_p %}
+      {% assign apply_li = block.settings.apply_li %}
       {% assign apply_custom = block.settings.apply_custom %}
       {% assign apply_a = block.settings.apply_a %}
       {% assign apply_input = block.settings.apply_input %}
@@ -92,6 +93,12 @@
         {% endif %}
         {% if apply_p %}
           p {
+            font-family: '{{name}}' !important;
+            font-weight: {{custom_font_weight}} !important;
+          }
+        {% endif %}
+        {% if apply_li %}
+          li {
             font-family: '{{name}}' !important;
             font-weight: {{custom_font_weight}} !important;
           }
@@ -178,7 +185,7 @@
   "settings": [
     {
       "type": "header",
-      "content": "Subscribte to [Free Tutorials](https://www.youtube.com/amazinglearning?sub_confirmation=1)"
+      "content": "Add your Font url"
     },
     {
       "type": "checkbox",
@@ -194,7 +201,7 @@
       "settings": [
         {
           "type": "header",
-          "content": "Subscribte to [Free Tutorials](https://www.youtube.com/@amazinglearning?sub_confirmation=1)"
+          "content": "Add your Font url"
         },
         {
           "type": "text",
@@ -277,6 +284,12 @@
           "type": "checkbox",
           "id": "apply_p",
           "label": "<p> tags",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "apply_li",
+          "label": "<li> tags",
           "default": true
         },
          {
