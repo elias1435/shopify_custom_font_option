@@ -10,3 +10,5 @@ How to Add Custom Fonts in Your Shopify Store?
 
 5. include the section in the body tag. Find <body and paste below line:
    {% section 'custom-font' %}
+
+Soruce: https://www.youtube.com/watch?v=sBKE_M-I4pY
