@@ -10,5 +10,6 @@ How to Add Custom Fonts in Your Shopify Store?
 
 5. include the 'custom-font.liquid' section in the body tag in 'theme.liquid' (find it in layout directory). Find <body> and paste below line:
    {% section 'custom-font' %}
+6. Now you can find a new setting section in Theme Settings "Typography"
 
 Soruce: https://www.youtube.com/watch?v=sBKE_M-I4pY
